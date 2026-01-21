@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="ar" dir="rtl" data-bs-theme="auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,20 +9,15 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Carousel Template · Bootstrap v5.3</title>
+    <title>قالب شرائح العرض · Bootstrap v5.3</title>
     <link
       rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/carousel/"
+      href="https://getbootstrap.com/docs/5.3/examples/carousel-rtl/"
     />
-    <link rel="icon" type="image/png" href="/PEC-Portfolio-Project/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/PEC-Portfolio-Project/favicon.svg" />
-    <link rel="shortcut icon" href="/PEC-Portfoliio-Project/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/PEC-Portfolio-Project/apple-touch-icon.png" />
-    <link rel="manifest" href="/PEC-Portfolio-Project/site.webmanifest" />
     <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
-    <link href="carousel.css" rel="stylesheet" />
+    <link href="../carousel/carousel.rtl.css" rel="stylesheet" />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -96,7 +91,6 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-      
     </style>
   </head>
   <body>
@@ -198,7 +192,7 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Fadima Macalou</a>
+          <a class="navbar-brand" href="#">شرائح العرض</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -206,18 +200,35 @@
             data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="تبديل التنقل"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الصفحة الرئيسية</a
+                >
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="#">حلقة الوصل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"
+                  >رابط غير مفعل</a
+                >
+              </li>
             </ul>
-            
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="بحث"
+                aria-label="بحث"
+              />
+              <button class="btn btn-outline-success" type="submit">بحث</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -261,17 +272,16 @@
                 height="100%"
                 fill="var(--bs-secondary-color)"
               ></rect>
-              <image x="-160" y="5" width="125%" height="125%" href="ftp.PNG" />
             </svg>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Fan Trick Photography</h1>
+                <h1>عنوان المثال.</h1>
                 <p class="opacity-75">
-                  Fine Art Photography Cost Estimates For Your Photo Needs!
+                  تشير الدراسات الإحصائية حسب الجمعية الأمريكية للغات بأن
+                  الإقبال على العربية زاد %126 في الولايات المتحدة الأمريكية
+                  وحدها بين عامي 2002 و2009م.
                 </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="https://fadima1m.github.io/FanTrick/">Learn More</a>
-                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p>
               </div>
             </div>
           </div>
@@ -289,15 +299,16 @@
                 height="100%"
                 fill="var(--bs-secondary-color)"
               ></rect>
-              <image x="-190" y="7" width="130%" height="130%" href="scp.PNG" />
             </svg>
             <div class="container">
               <div class="carousel-caption">
-                <h1>Solar Calculator</h1>
+                <h1>عنوان مثال آخر.</h1>
                 <p>
-                  A Calculator To Help With Your Solar Powered Needs!
+                  حسب المجلس الثقافي البريطاني فإن تعليم الإنجليزية داخل
+                  بريطانيا يسهم في تعزيز اقتصادها بما يتجاوز ملياري جنيه سنوياً،
+                  كما أنه وفر أكثر من 26 ألف وظيفة.
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="https://fadima1m.github.io/SolarCalculatorUpdate/">Check it Out!</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#">أعرف أكثر</a></p>
               </div>
             </div>
           </div>
@@ -315,16 +326,18 @@
                 height="100%"
                 fill="var(--bs-secondary-color)"
               ></rect>
-              <image x="-290" y="7" width="150%" height="150%" href="hmg.PNG" />
             </svg>
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>Hangman</h1>
+                <h1>واحد أكثر لقياس جيد.</h1>
                 <p>
-                  A Fun Hangman Game To Guess Your Favorite Mainstream Movies!
+                  الإحصاءات لحجم الاستثمار اللغوي خارج بريطانيا تتفاوت من سنة
+                  لأخرى إلا أن المدير التنفيذي للمجلس الثقافي البريطاني إدي
+                  بايرز يرى أن استثمار تعليم الإنجليزية في الخارج لا يحسب على
+                  المستوى المالي فحسب بل على المستوى السياسي أيضاً.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="https://fadima1m.github.io/Hangman/">Play Now!</a>
+                  <a class="btn btn-lg btn-primary" href="#">تصفح المعرض</a>
                 </p>
               </div>
             </div>
@@ -337,7 +350,7 @@
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">السابق</span>
         </button>
         <button
           class="carousel-control-next"
@@ -346,7 +359,7 @@
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">التالي</span>
         </button>
       </div>
       <!-- Marketing messaging and featurettes
@@ -355,9 +368,7 @@
       <div class="container marketing">
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4" style="align-items:center;">
+          <div class="col-lg-4">
             <svg
               aria-label="Placeholder"
               class="bd-placeholder-img rounded-circle"
@@ -367,24 +378,77 @@
               width="140"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Fadima Macalou</title>
+              <title>Placeholder</title>
               <rect
                 width="100%"
                 height="100%"
-                fill="rgb(214,122,173)"
+                fill="var(--bs-secondary-color)"
               ></rect>
-              <image x="-40" y="-40" height="220" width="180" href="20250804_AS_FADIMA_MACALOU_675 (2).jpg" />
             </svg>
-            <h2 class="fw-normal">Meet Fadima!</h2>
+            <h2 class="fw-normal">عنوان</h2>
             <p>
-              A coder, crocheter and creator, who is a Junior UI/UX Designer. I have a passion for technology, fashion and creativity!
+              تذكر دائماً أن الحاسوب لا يمتلك ذكاءً، ولكنه يكتسب الذكاء
+              الاصطناعي من خلال ثلاثة عناصر وظيفية رئيسة، هي: القدرة على
+              التحليل، والقدرة على التأليف، والاستدلال المنطقي.
             </p>
-            <p>
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/fadima-m/">View details &raquo;</a>
-            </p>
+            <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
           </div>
           <!-- /.col-lg-4 -->
-          
+          <div class="col-lg-4">
+            <svg
+              aria-label="Placeholder"
+              class="bd-placeholder-img rounded-circle"
+              height="140"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="140"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">عنوان آخر</h2>
+            <p>
+              إذا أردنا استخدام الحاسوب الذكي في معالجة اللغة العربية فإننا نجد
+              أنفسنا أمام تحدٍّ كبير، خاصة وأن لغتنا تمتاز بتماسك منظوماتها
+              وتداخلها، ومع ذلك فإن الذكاء الاصطناعي يمكّننا من الحصول على أربعة
+              أنواع من المعالجة، هي: المعالجة الصوتية، والمعالجة الصرفية،
+              والمعالجة النحوية، والمعالجة الدلالية.
+            </p>
+            <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              aria-label="Placeholder"
+              class="bd-placeholder-img rounded-circle"
+              height="140"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="140"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Placeholder</title>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg>
+            <h2 class="fw-normal">عنوان ثالث لتأكيد المعلومة</h2>
+            <p>
+              بفضل بحوث الذكاء الاصطناعي وتقنياته استطعنا الانتقال من مرحلة
+              التعامل مع الفيزيائي إلى مرحلة التعامل مع المنطقي، وقد انعكس هذا
+              الانتقال بصورة إيجابية على الكيفية التي تتعامل بها الشعوب مع
+              لغاتها الحيَّة، وهذا يعني أنه يجب أن ينعكس بصورة إيجابية على كيفية
+              تعاملنا مع لغتنا العربية.
+            </p>
+            <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p>
+          </div>
           <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
@@ -393,11 +457,14 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-              <a href="https://fadima1m.github.io/TinsleyXer/"> Tinsley Xeriscapes.</a> <br>
-              <span class="text-body-secondary">It’ll blow your mind.</span>
+              العنوان الأول المميز.
+              <span class="text-body-secondary"> سيذهل عقلك. </span>
             </h2>
             <p class="lead">
-              Pick Your Range of Flowers Based on Your Area of Water Hardness.
+              وجه الإنسان هو جزء معقَّد ومتميِّز للغاية من جسمه. وفي الواقع، إنه
+              أحد أكثر أنظمة الإشارات المتاحة تعقيداً لدينا؛ فهو يتضمَّن أكثر من
+              40 عضلة مستقلة هيكلياً ووظيفياً، بحيث يمكن تشغيل كل منها بشكل
+              مستقل عن البعض الآخر؛ وتشكِّل أحد أقوى مؤشرات العواطف.
             </p>
           </div>
           <div class="col-md-5">
@@ -410,13 +477,15 @@
               width="500"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Tinsley Xeriscapes</title>
+              <title>Placeholder</title>
               <rect
                 width="100%"
                 height="100%"
                 fill="var(--bs-secondary-bg)"
               ></rect>
-              <image x="30" y="25" height="400" width="400" href="flower.png" />
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
             </svg>
           </div>
         </div>
@@ -424,11 +493,14 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">
-              <a href="https://fadima1m.github.io/Pink-Tic-Tac-Toe-JS-D/ ">Tic Tac Toe.</a> <br>
-              <span class="text-body-secondary">Checkmate.</span>
+              أوه نعم، هذا جيد.
+              <span class="text-body-secondary"> شاهد بنفسك. </span>
             </h2>
             <p class="lead">
-              Play a Fun Classic Game of Tic-Tac-Toe. But Pink!
+              عندما نضحك أو نبكي، فإننا نعرض عواطفنا، مما يسمح للآخرين بإلقاء
+              نظرة خاطفة على أذهاننا أثناء "قراءة" وجوهنا بناءً على التغييرات في
+              مكوّنات الوجه الرئيسة، مثل: العينين والحاجبين والجفنين والأنف
+              والشفتين.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -441,13 +513,15 @@
               width="500"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Pink Tic Tac Toe</title>
+              <title>Placeholder</title>
               <rect
                 width="100%"
-                height="90%"
+                height="100%"
                 fill="var(--bs-secondary-bg)"
               ></rect>
-              <image x="-30" y="-35" height="500" width="500" href="pttt.PNG" />
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
             </svg>
           </div>
         </div>
@@ -455,11 +529,14 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading fw-normal lh-1">
-              <a href="https://fadima1m.github.io/TubaFarm/">Tuba Farm Equipment.</a> <br>
-              <span class="text-body-secondary">See for yourself.</span>
+              وأخيرًا، هذا. <span class="text-body-secondary"> كش ملك. </span>
             </h2>
             <p class="lead">
-              A Helpful Guide For Your Next Purchase on Farm Equipment!
+              إن جميع العضلات في أجسامنا مدعمة بالأعصاب المتصلة من كافة أنحاء
+              الجسم بالنخاع الشوكي والدماغ. وهذا الاتصال العصبي هو ثنائي
+              الاتجاه، أي إن العصب يتسبَّب في تقلصات العضلات بناءً على إشارات
+              الدماغ، ويقوم في الوقت نفسه بإرسال معلومات عن حالة العضلات إلى
+              الدماغ
             </p>
           </div>
           <div class="col-md-5">
@@ -472,13 +549,15 @@
               width="500"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>TubaFarmEquipment</title>
+              <title>Placeholder</title>
               <rect
                 width="100%"
-                height="90%"
+                height="100%"
                 fill="var(--bs-secondary-bg)"
               ></rect>
-              <image x="-210" y="-190" height="800" width="800" href="tubafarmequip.PNG" />
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
             </svg>
           </div>
         </div>
@@ -488,10 +567,10 @@
       <!-- /.container -->
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-end"><a href="#">BACK TO TOP</a></p>
+        <p class="float-end"><a href="#">عد إلى الأعلى</a></p>
         <p>
           &copy; 2017–2025 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; Fadima Macalou-2026
+          <a href="#">سياسة الخصوصية</a> &middot; <a href="#">شروط الاستخدام</a>
         </p>
       </footer>
     </main>
